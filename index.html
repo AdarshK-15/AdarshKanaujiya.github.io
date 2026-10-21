@@ -1,122 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adarsh Kanaujiya | B.Tech CSE Portfolio</title>
+  <title>Adarsh Kanaujiya | CSE Portfolio</title>
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Typed.js for smooth typing text animation -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.25; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(1.08); }
+    }
+    .animate-glow {
+      animation: pulseGlow 8s ease-in-out infinite;
+    }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-teal-500 selection:text-white">
-  
-  <div class="max-w-4xl mx-auto px-6 py-16 space-y-16">
-    
-    <!-- Hero / Header -->
-    <header class="space-y-4 border-b border-slate-800 pb-10">
-      <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Adarsh Kanaujiya</h1>
-      <p class="text-lg text-teal-400 font-medium">Undergraduate CSE Student & Systems/ML Developer</p>
-      <p class="text-slate-400 max-w-2xl leading-relaxed">
-        3rd-year B.Tech CSE at School of Engineering & Technology, Nagaland University. Interested in Deep Learning architectures, Edge-AI, and high-performance backend pipelines.
+<body class="bg-[#0b0f19] text-slate-100 font-sans selection:bg-cyan-500 selection:text-black antialiased relative overflow-x-hidden">
+
+  <!-- Ambient Background Gradients -->
+  <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-600/20 rounded-full blur-3xl pointer-events-none animate-glow"></div>
+  <div class="fixed bottom-10 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none animate-glow" style="animation-delay: 4s;"></div>
+
+  <main class="max-w-4xl mx-auto px-6 py-16 space-y-20 relative z-10">
+
+    <!-- Header / Hero Section -->
+    <header class="space-y-6 border-b border-slate-800/80 pb-12">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-800 text-xs font-semibold text-cyan-400">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        Available for Winter Research Internship 2026-2027
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white">
+        Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400">Adarsh Kanaujiya</span>
+      </h1>
+
+      <p class="text-xl sm:text-2xl font-medium text-slate-300 h-8">
+        I build <span id="typed-text" class="text-cyan-400 border-b-2 border-cyan-400"></span>
       </p>
+
+      <p class="text-slate-400 max-w-2xl text-base leading-relaxed">
+        3rd-year B.Tech in Computer Science & Engineering at <strong>Nagaland University (A Central University)</strong>, Kohima. Focused on software development, database-backed web architectures, and algorithm implementations.
+      </p>
+
+      <!-- Action Buttons with Your Real Accounts -->
       <div class="flex flex-wrap gap-4 pt-2">
-        <a href="https://github.com/AdarshK-15" target="_blank" class="px-4 py-2 text-sm font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-white transition border border-slate-700">GitHub</a>
-        <a href="https://linkedin.com/in/Adarsh Kanaujiya" target="_blank" class="px-4 py-2 text-sm font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-white transition border border-slate-700">LinkedIn</a>
-        <a href="mailto:kanaujiyaadarsh3@gmail.com" class="px-4 py-2 text-sm font-semibold rounded-lg bg-teal-600 hover:bg-teal-500 text-white transition">Get in Touch</a>
+        <a href="https://github.com/AdarshKanaujiya" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-cyan-400 text-slate-200 hover:text-white transition duration-200 shadow-md">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/adarsh-kanaujiya-b274293a2" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-blue-400 text-slate-200 hover:text-white transition duration-200 shadow-md">
+          <svg class="w-4 h-4 fill-current text-blue-400" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:kanaujiyaadarsh3@gmail.com" 
+           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-slate-950 font-bold transition duration-200 shadow-lg shadow-cyan-500/20">
+          Email Me
+        </a>
       </div>
     </header>
 
-    <!-- Technical Skills -->
+    <!-- Technical Skills Section -->
     <section class="space-y-6">
-      <h2 class="text-2xl font-bold tracking-tight text-white">Technical Skills</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
-          <h3 class="text-sm font-semibold text-teal-400 mb-2">Languages</h3>
-          <p class="text-sm text-slate-300">C, C++, Python, JavaScript, SQL, Bash</p>
+      <div class="flex items-center gap-3">
+        <span class="w-1.5 h-6 bg-gradient-to-b from-cyan-400 to-indigo-500 rounded-full"></span>
+        <h2 class="text-2xl font-bold tracking-tight text-white">Technical Arsenal</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition duration-300 group">
+          <h3 class="text-base font-semibold text-cyan-400 mb-3 flex items-center justify-between">
+            Programming Languages
+            <span class="text-slate-600 group-hover:text-cyan-400 transition">&lt;/&gt;</span>
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed font-mono">C, C++, Python, Java</p>
         </div>
-        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
-          <h3 class="text-sm font-semibold text-teal-400 mb-2">Frameworks & ML</h3>
-          <p class="text-sm text-slate-300">PyTorch, OpenCV, Scikit-learn, Pandas, FastAPI</p>
+
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-teal-500/50 transition duration-300 group">
+          <h3 class="text-base font-semibold text-teal-400 mb-3 flex items-center justify-between">
+            Web & Database
+            <span class="text-slate-600 group-hover:text-teal-400 transition">&#9881;</span>
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed font-mono">SQL (MySQL), PHP, HTML5, CSS3</p>
         </div>
-        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
-          <h3 class="text-sm font-semibold text-teal-400 mb-2">Tools & Systems</h3>
-          <p class="text-sm text-slate-300">Git, Linux, Docker, Postman, Google Colab</p>
+
+        <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-indigo-500/50 transition duration-300 group">
+          <h3 class="text-base font-semibold text-indigo-400 mb-3 flex items-center justify-between">
+            Core CS Concepts
+            <span class="text-slate-600 group-hover:text-indigo-400 transition">&#9874;</span>
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed">Data Structures & Algorithms, DBMS, Object-Oriented Programming (OOP), Git/GitHub</p>
         </div>
       </div>
     </section>
 
-    <!-- Featured Projects -->
+    <!-- Projects Section -->
     <section class="space-y-6">
-      <h2 class="text-2xl font-bold tracking-tight text-white">Featured Projects</h2>
-      <div class="space-y-6">
-        
-        <!-- Project 1 -->
-        <article class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
-          <div class="flex justify-between items-baseline mb-2">
-            <h3 class="text-lg font-bold text-white">Structure-Preserving Autoencoder for Latent Representation</h3>
-            <a href="https://github.com/yourusername/project1" target="_blank" class="text-xs text-teal-400 hover:underline">GitHub &rarr;</a>
+      <div class="flex items-center gap-3">
+        <span class="w-1.5 h-6 bg-gradient-to-b from-cyan-400 to-indigo-500 rounded-full"></span>
+        <h2 class="text-2xl font-bold tracking-tight text-white">Featured Projects</h2>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6">
+
+        <!-- Project 1: PHP + SQL + Web -->
+        <article class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/5 relative overflow-hidden group">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+            <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition">
+              Student Records & Academic Management Portal
+            </h3>
+            <a href="https://github.com/AdarshKanaujiya/Student-Management-System" target="_blank" class="inline-flex items-center gap-1 text-xs text-cyan-400 hover:text-cyan-300 font-mono">
+              View Repository &rarr;
+            </a>
           </div>
           <p class="text-sm text-slate-400 mb-4 leading-relaxed">
-            Engineered a deep convolutional autoencoder incorporating topological preservation loss to map high-dimensional sensor data into 2D latent space while retaining pairwise clustering distances.
+            Engineered a full-stack academic portal facilitating secure CRUD operations, student profile updates, and grade management using relational SQL schemas and PHP backend processing.
           </p>
-          <div class="flex flex-wrap gap-2 text-xs font-mono text-teal-300">
-            <span class="px-2.5 py-1 rounded-md bg-slate-800">Python</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800">PyTorch</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800">t-SNE</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800">Scikit-learn</span>
+          <div class="flex flex-wrap gap-2 text-xs font-mono">
+            <span class="px-3 py-1 rounded-md bg-slate-800/90 text-cyan-300 border border-slate-700">PHP</span>
+            <span class="px-3 py-1 rounded-md bg-slate-800/90 text-cyan-300 border border-slate-700">SQL / MySQL</span>
+            <span class="px-3 py-1 rounded-md bg-slate-800/90 text-cyan-300 border border-slate-700">HTML5/CSS3</span>
           </div>
         </article>
 
-        <!-- Project 2 -->
-        <article class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
-          <div class="flex justify-between items-baseline mb-2">
-            <h3 class="text-lg font-bold text-white">Trace-Driven L1/L2 Cache Memory Simulator</h3>
-            <a href="https://github.com/yourusername/project2" target="_blank" class="text-xs text-teal-400 hover:underline">GitHub &rarr;</a>
+        <!-- Project 2: C++ / OOP System -->
+        <article class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80 hover:border-teal-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-teal-500/5 relative overflow-hidden group">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+            <h3 class="text-lg font-bold text-white group-hover:text-teal-300 transition">
+              Banking & Transaction Simulator
+            </h3>
+            <a href="https://github.com/AdarshKanaujiya/Banking-Management-System" target="_blank" class="inline-flex items-center gap-1 text-xs text-teal-400 hover:text-teal-300 font-mono">
+              View Repository &rarr;
+            </a>
           </div>
           <p class="text-sm text-slate-400 mb-4 leading-relaxed">
-            Constructed a configurable multi-level cache simulator evaluating LRU, FIFO, and LFU cache replacement policies. Benchmarked cache miss penalty and hit ratios on standard memory trace files.
+            Constructed an Object-Oriented console application in C++ managing account balance updates, deposit/withdrawal validation, and transaction logs using robust file stream persistence.
           </p>
-          <div class="flex flex-wrap gap-2 text-xs font-mono text-teal-300">
-            <span class="px-2.5 py-1 rounded-md bg-slate-800">C++</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800">Computer Architecture</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800">Valgrind</span>
+          <div class="flex flex-wrap gap-2 text-xs font-mono">
+            <span class="px-3 py-1 rounded-md bg-slate-800/90 text-teal-300 border border-slate-700">C++</span>
+            <span class="px-3 py-1 rounded-md bg-slate-800/90 text-teal-300 border border-slate-700">OOP</span>
+            <span class="px-3 py-1 rounded-md bg-slate-800/90 text-teal-300 border border-slate-700">File Handling</span>
           </div>
         </article>
 
-        <!-- Project 3 -->
-        <article class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
-          <div class="flex justify-between items-baseline mb-2">
-            <h3 class="text-lg font-bold text-white">Edge-AI Gesture Classifier with OpenCV & CNN</h3>
-            <a href="https://github.com/yourusername/project3" target="_blank" class="text-xs text-teal-400 hover:underline">GitHub &rarr;</a>
+        <!-- Project 3: Python Automation -->
+        <article class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80 hover:border-indigo-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/5 relative overflow-hidden group">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+            <h3 class="text-lg font-bold text-white group-hover:text-indigo-300 transition">
+              Data Analysis & Automated File Organizer
+            </h3>
+            <a href="https://github.com/AdarshKanaujiya/Python-Automation-Scripts" target="_blank" class="inline-flex items-center gap-1 text-xs text-indigo-400 hover:text-indigo-300 font-mono">
+              View Repository &rarr;
+            </a>
           </div>
           <p class="text-sm text-slate-400 mb-4 leading-relaxed">
-            Real-time hand and face landmark detection pipeline using MediaPipe and an INT8-quantized CNN running at 45 FPS on standard CPU inference for assistive virtual navigation.
+            Developed a Python-based utility script automating directory sorting, system metadata extraction, and CSV data summarization for rapid dataset preprocessing.
           </p>
-          <div class="flex flex-wrap gap-2 text-xs font-mono text-teal-300">
-            <span class="px-2.5 py-1 rounded-md bg-slate-800">Python</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800">OpenCV</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800">TorchScript</span>
+          <div class="flex flex-wrap gap-2 text-xs font-mono">
+            <span class="px-3 py-1 rounded-md bg-slate-800/90 text-indigo-300 border border-slate-700">Python</span>
+            <span class="px-3 py-1 rounded-md bg-slate-800/90 text-indigo-300 border border-slate-700">OS Module</span>
+            <span class="px-3 py-1 rounded-md bg-slate-800/90 text-indigo-300 border border-slate-700">CSV Parsing</span>
           </div>
         </article>
 
       </div>
     </section>
 
-    <!-- Education -->
-    <section class="space-y-4 border-t border-slate-800 pt-8">
-      <h2 class="text-xl font-bold tracking-tight text-white">Education</h2>
-      <div class="flex justify-between items-start">
+    <!-- Education Section -->
+    <section class="space-y-6 border-t border-slate-800/80 pt-10">
+      <div class="flex items-center gap-3">
+        <span class="w-1.5 h-6 bg-gradient-to-b from-cyan-400 to-indigo-500 rounded-full"></span>
+        <h2 class="text-2xl font-bold tracking-tight text-white">Education</h2>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h3 class="font-semibold text-slate-200">Nagaland University (A Central University)</h3>
-          <p class="text-sm text-slate-400">B.Tech in Computer Science & Engineering | Dimapur Campus</p>
+          <h3 class="text-lg font-bold text-white">Nagaland University</h3>
+          <p class="text-sm text-cyan-400 font-medium">School of Engineering & Technology (Kohima Campus)</p>
+          <p class="text-sm text-slate-400 mt-1">B.Tech in Computer Science and Engineering</p>
         </div>
-        <p class="text-sm text-slate-500 font-mono">2024 – 2028</p>
+        <div class="sm:text-right">
+          <span class="inline-block px-3 py-1 rounded-full bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">
+            2024 – 2028 (3rd Year)
+          </span>
+          <p class="text-xs text-slate-500 mt-2 font-mono">CGPA: 7.14 (till 4th Sem)</p>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
-      Built with clean HTML & Tailwind. Hosted on GitHub Pages.
+    <footer class="border-t border-slate-800/80 pt-8 text-center text-xs text-slate-500">
+      Designed with Tailwind CSS & Typed.js. Hosted on GitHub Pages.
     </footer>
 
-  </div>
+  </main>
+
+  <!-- Script for Typing Animation -->
+  <script>
+    var typed = new Typed('#typed-text', {
+      strings: [
+        'practical web applications.',
+        'clean C++ and Python code.',
+        'relational SQL databases.',
+        'reliable backend workflows.'
+      ],
+      typeSpeed: 45,
+      backSpeed: 25,
+      backDelay: 1800,
+      loop: true
+    });
+  </script>
 </body>
 </html>
